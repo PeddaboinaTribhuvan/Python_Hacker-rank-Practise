@@ -1,0 +1,68 @@
+Task
+Given an integer, , and  space-separated integers as input, create a tuple, , of those  integers. Then compute and print the result of .
+
+Note: hash() is one of the functions in the __builtins__ module, so it need not be imported.
+
+Input Format
+
+The first line contains an integer, , denoting the number of elements in the tuple.
+The second line contains  space-separated integers describing the elements in tuple .
+
+Output Format
+
+Print the result of .
+
+Sample Input 0
+
+2
+1 2
+Sample Output 0
+
+3713081631934410656
+Language
+Pypy 3
+
+More
+123546
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    integer_tuple = tuple(integer_list)
+print(hash(integer_tuple))
+
+Line: 6 Col: 1
+
+Submit Code
+
+Run Code
+
+Upload Code as File
+
+Test against custom input
+Congratulations!
+
+You have passed the sample test cases. Click the submit button to run your code against all the test cases.
+
+
+Sample Test case 0
+Input (stdin)
+
+Download
+2
+1 2
+Your Output (stdout)
+3713081631934410656
+Expected Output
+
+Download
+3713081631934410656
+Contest Calendar
+
+
+Code
+----------------------
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    integer_tuple = tuple(integer_list)
+print(hash(integer_tuple))
